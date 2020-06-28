@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>2.1 Урок таблицы </title>
+    <style>
+        table {
+            width: 80%; /* Ширина таблицы*/
+            margin: auto; /* Выравнивание центр*/
+            border-spacing: 2px 2px; /* Расстояние между ячейками 1-я горизонталь 2-я вертикаль*/
+            border: 1px solid;   /*прямоугольная рамка вокруг ячеек */
+        }
+
+        tr, td, th {
+            border: 1px solid;  /*Вроде толщина границ ячеек  */
+
+        }
+    </style>
+</head>
+<body>
+<table>
+    <caption><i>Прогноз погоды</i></caption> <!--Заголовок-->
+    <tr>
+        <th>Город</th>
+        <th>Утро</th>
+        <th>День</th>
+        <th>Вечер</th>
+        <th>Ночь</th>
+    </tr>
+    <tr>
+        <th>Минск</th>
+        <td>-5&deg;</td>
+        <td>+5&deg;</td>
+        <td rowspan="2">+2С&deg;</td> <!--Объеденил ячейки по высоте-->
+        <td>-10&deg;</td>
+    </tr>
+    <tr>
+        <th>Брест</th>
+        <td>0<sup>0</sup></td>     <!--Градус вариант 2-->
+        <td>+9<sup>0</sup></td>      <!--Градус вариант 2-->
+        <td>-4<sup>0</sup></td>          <!--Градус вариант 2-->
+
+    </tr>
+</table>
+
+</body>
+</html>
