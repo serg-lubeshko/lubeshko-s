@@ -205,7 +205,7 @@
                     <input enctype="multipart/form-data" type="file"><br>
                     <label>Срок хранения (года):</label><br>
                     <label>
-                        <input name="keep_years" size="7" type="number">
+                        <input name="keep_years" pattern="^[ 0-9]+$" size="7"  >
                     </label> <!--      size="7" так уменишил ячейку     -->
                     <input type="submit" value="загрузить"><br>
                     <!--если используется поле для отправки файла (input type="file"), следует определить атрибут enctype как multipart/form-data.-->
