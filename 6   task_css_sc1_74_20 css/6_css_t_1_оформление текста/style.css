@@ -1,0 +1,39 @@
+@import "mystyle_for_print.css" print;
+
+.screen {
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: #fddacb;
+}
+
+p {
+"float: right"
+}
+
+#home {
+    text-align: center
+}
+
+hr {
+    border: 1px solid #4672e3
+}
+
+#note {
+    font-size: smaller;
+    color: red
+}
+
+#underline {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+p > span {
+    font-weight: bold
+}
+
+td {
+    text-align: center
+}
+table {width: 100%}
+p>img {float: right}
