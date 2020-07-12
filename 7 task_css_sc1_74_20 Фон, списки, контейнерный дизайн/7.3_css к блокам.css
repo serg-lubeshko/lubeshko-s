@@ -1,0 +1,40 @@
+
+body {
+    background-color: #ffffff;
+    max-width: 960px;
+    margin: auto;
+}
+
+div{
+
+    padding: 5px 15px;
+
+}
+.nav{
+
+    border-radius: 10px;
+    width: 15em;
+    background-color: #e3e0e0;
+    float: left;
+
+
+}
+.st1 {
+    background-color: rgba(81, 85, 83, 0.37);
+    width:67%;
+    margin-left: 1px;
+    float: left;
+    margin-bottom: 2em;
+}
+.st2 {
+    background-color: #d0cbcb;
+    width: 67%;
+    margin-left: 1px;
+    float: left;
+
+}
+.footer{
+    background-color: rgba(165, 246, 188, 0.37);
+    clear: both;
+    width: 96%;
+}

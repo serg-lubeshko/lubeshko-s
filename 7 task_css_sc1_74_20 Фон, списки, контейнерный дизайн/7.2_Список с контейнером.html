@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7.2 Список с контейнером</title>
+    <style media="screen" type="text/css">
+        li span {
+            font-weight: bolder;
+        }
+        .main_ol{
+            list-style-type: upper-roman;
+            padding-left: 35px;
+
+        }
+        .ol_type{
+            list-style-type: lower-roman;
+        }
+
+        pre {
+            background-color: black;
+            color: #33f507;
+            width: 400px;
+            max-height: 200px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+<ol class="main_ol">
+    <li><span>Контейнер с кодом</span>
+        <ol class="ol_type">
+            <li>Цвет фона:чёрный</li>
+            <li>Цвет текста: зелёный</li>
+            <li>Ширина: 400px</li>
+            <li>Максимальная высота контейнера: 4-е строки</li>
+            <li>Переполнение: автоматическое</li>
+
+        </ol>
+    </li>
+    <li><span>Список</span>
+        <ol class="ol_type">
+            <li>Ширина: 350px</li>
+            <li>Тип списка: римские цифры</li>
+            <li>Тип вложенного списка: римские цифры нижний регистр</li>
+
+
+        </ol>
+    </li>
+</ol>
+<pre>
+    <code>
+#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"
+    </code>
+</pre>
+
+</body>
+</html>
+
+<!--
+Если изменение порядка элементов делает список неправильным, надо использовать <ol>.
+Если порядок не имеет значения, используйте <ul>.
+<ol> сработал на нумерацию <ul> только значки
+-->

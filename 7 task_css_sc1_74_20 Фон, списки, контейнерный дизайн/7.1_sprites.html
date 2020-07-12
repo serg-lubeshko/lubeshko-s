@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7_css_sprites</title>
+    <style>
+
+        .card{
+            width: 145px;
+            height: 200px;
+            background-image: url(cards.png);
+            display: inline-block;
+        }
+        .card_1 {
+            background-position: -145px -200px;
+        }
+        .card_2 {
+            background-position: -430px -595px;
+            position: relative;
+            left: -30px;
+
+        }
+        .card_3 {
+            background-position: -288px -1393px;
+            left: -60px;
+            position: relative;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="card card_1"></div>
+<div class="card card_2"></div>
+<div class="card card_3"></div>
+</body>
+
+</html>
+
+
+<!--Дивы, которые нуно раместить в ряд, размещаем внутри блока со следующим css-правилом
+display: table;
+
+А самим дивам задаем
+display: table-cell;
+
+В чем плюс подхода: нету пробелов между блоками, все приемущества таблиц.
+
+При этом в диве, который задан с display: table желательно больше ничего не располагать.
+Это имитация таблиц на css для блочных элементов.
+Можно сделать на родной таблице через элементы table, tr, td.--
