@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7.5_flex</title>
+    <style>
+        .container-1 {
+            display: flex; /*Выстроил в ряд*/
+            align-items: flex-start; /*Размер блоков по содержимому*/
+            /*flex-direction: row; Выстроил в колонну*/
+            background-color: #dfeffd;
+            margin-bottom: 0.2em;
+        }
+
+        .container-2 {
+            display: flex; /*Выстроил в ряд*/
+            background-color: #eee8e8;
+        }
+
+        div>div>div, img {background: #a0bfa0;}
+
+        .box-1 {
+            /* flex: 1; Размер блоков */
+            width: 15em;
+            background-color: #c9c6c6;
+        }
+
+        .box-2 {
+            flex: 2;
+
+        }
+
+
+        img {
+            width: 100px;
+            height: 100px;
+            float:right;
+
+
+        }
+        * {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container-1">
+    <div class="box-1">
+        <h3>Блок навигации</h3>
+        <ul>
+            <li>Ширина 15em</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации наполните контентом достаточным,чтобы по высоте он начинал захватывать вторую статью,
+                как показано в данном примере
+            </li>
+        </ul>
+    </div>
+    <div class="box-2">
+        <div style="margin: 0">
+            <h3>Статья 1</h3>
+            <p>
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+            </p>
+        </div>
+        <div style="margin-top: 10px">
+            <h3>Статья 2</h3>
+
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+                Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой
+                картинки.
+                <div style="overflow: hidden"><img alt="mail" src="mail.png" title="mail"></div>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+<div class="container-2">
+    Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+</div>
+</body>
+</html>
