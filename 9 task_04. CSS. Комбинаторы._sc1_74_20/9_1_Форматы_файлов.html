@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форматы файлов</title>
+    <style>
+        p {
+            border: 1px silver solid;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 8px;
+
+        }
+
+        a[href^="https://"] {
+            background-image: url(img/extref.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            padding-left: 15px;
+        }
+
+        p a[href$=".docx"],
+        li a[href$=".docx"]:hover {
+            background-image: url(img/logo-doc.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+            padding-right: 20px;
+
+        }
+        p a[href$=".pdf"],
+        li a[href$=".pdf"]:hover {
+            background-image: url(img/logo-pdf.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            padding-right: 20px;}
+
+        p a[href$=".zip"],
+        li a[href$=".zip"]:hover {
+            background-image: url(img/logo-zip.gif);
+            background-repeat: no-repeat;
+            background-position: right;
+            padding-right: 20px;}
+        li a{
+            background-image: url(img/logo-list.jpg);
+            background-repeat:no-repeat;
+            background-position: left;
+            padding-left: 25px;
+            list-style-type: none;
+
+        }
+        li{
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+<h2>Форматы файлов.</h2>
+<p>.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/Doc" target="_blank">document</a>) — расширение имени
+    файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для
+    обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с
+    разметкой.<br>
+    <a download href="files/document.docx">Документ MS Word</a><br>
+</p>
+
+
+<p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_blank">PDF</a>) — межплатформенный
+    формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка
+    PostScript.
+    <br>
+    <a download="pdf_" href="files/document.pdf">Документ PDF</a>
+</p>
+
+<p>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a
+        href="https://ru.wikipedia.org/wiki/zip" target="_blank">.zip</a> и хранит в сжатом или несжатом виде один или
+    несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
+    <br>
+    <a download="zip" href="files/document.zip">Архив</a>
+</p>
+<h3>Это список из файлов</h3>
+<ul>
+    <li><a download="doc_" href="files/document.docx">Документ MS Word</a></li>
+    <li><a download="pdf_" href="files/document.pdf">Документ PDF</a></li>
+    <li><a download="zip_" href="files/document.zip">Архив</a></li>
+</ul>
+
+</body>
+</html>
