@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="s_css.css" rel="stylesheet" type="text/css">
+    <link href="media.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet"> <!--подключаем шрифт-->
+    <title>Menu</title>
+</head>
+<body>
+<header>
+    <nav class="dws-menu">
+        <input class="togMenu" id="menu" name="toggle" type="checkbox">  <!--Задаем кнопку меню-->
+        <label class="togMenu" for="menu"><i class="fa fa-bars">Меню</i></label>
+        <uL>
+            <li><a href="#"> Понедельник</a></li>
+            <li>
+                <input class="togSubMenu" id="sub_m1" name="toggle" type="checkbox">
+
+                <a href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Вторник</a>
+
+                <label for="sub_m1" class="togSubMenu"><i class="fa"></i></label>
+
+                <ul>
+                    <li><a href="#">Завтрак</a></li>
+                    <li><a href="#">Обед</a></li>
+                    <li><a href="#">Ужин</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-"></i> Среда</a>
+
+            </li>
+
+            <li>
+                <input class="togSubMenu" id="sub_m2" name="toggle" type="checkbox">
+                <a href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Четверг</a>
+
+                <label for="sub_m2" class="togSubMenu"><i class="fa"></i></label>
+
+                <ul>
+                    <li><a href="#">Завтрак</a></li>
+                    <li><a href="#">Обед</a></li>
+                    <li><a href="#">Ужин</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-"></i> Пятница</a>
+
+            </li>
+            <li>
+                <input class="togSubMenu" id="sub_m3" name="toggle" type="checkbox">
+                <a href="#"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Суббота</a>
+                <label for="sub_m3" class="togSubMenu"><i class="fa"></i></label>
+
+                <ul>
+                    <li><a href="#">Завтрак</a></li>
+                    <li><a href="#">Обед</a></li>
+                    <li><a href="#">Ужин</a></li>
+                </ul>
+            </li>
+        </uL>
+    </nav>
+</header>
+</body>
+</html>
