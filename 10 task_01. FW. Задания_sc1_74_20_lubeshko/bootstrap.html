@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          rel="stylesheet">
+    <title>Title</title>
+    <style>
+
+        .col-md-9 {
+            text-align: justify;
+        }
+
+        body {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>HOW-TO: Программа на Python, Часть 1</h1>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-3">
+            <ul>
+                <li><a href="bootstrap.html">Программа на Python — часть 1</a></li> <!--ссылки на другие локи-->
+                <li><a href="bootstrap10_2.html">Программа на Python — часть 2</a></li>
+                <li><a href="bootstrap10_3.html">Программа на Python — часть 3</a></li>
+
+            </ul>
+            <h4 id="3">Содержание</h4>
+            <h3>HOW-TO: Программа на Python, Часть 1</h3>
+            <ul>
+                <li><a href="#1">Наша первая программа</a></li> <!--ссылки внутри дока. 2. Пишем href="#1" -->
+                <li><a href="#2">Пример цикла For</a></li> <!--ссылки внутри дока. 2. Пишем href="#2" -->
+
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <img alt="python_IMG" class="rounded float-right" src="image/Icon-Python.png">
+            <div>Из множества существующих языков программирования Python — один из самых лёгких
+                в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+                Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+                обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+                создание консольных приложений, а в следующей — программирование графических
+                интерфейсов <u>(GUI)</u>. Давайте создадим простую программу прямо сейчас.
+            </div>
+            <h2 id="1">Наша первая программа</h2>
+            <h4><a href="#3"> К содержанию</a></h4>
+            <p> Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
+                каждая строка и пойдём дальше.</p>
+            <p> Введите эти 4 строки:</p>
+            <br>
+            <p class="alert-info">
+                <code class="code" style="color: black">
+                    #!/usr/bin/env python<br>
+                    print 'Hello. I am a python program.'<br>
+                    name = raw_input("What is your name?")<br>
+                    print "Hello there, " + name + "!"
+                </code>
+            </p>
+            <p>Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+                <b>python_examples</b>в домашнем каталоге. Этот пример показывает, как просто написать
+                программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+                этого введите в терминале<br></p>
+            <p class="alert-info">
+                <code class="code" style="color: black">
+                    <b><i><u>chmod +x hello.py</u></i></b>
+                </code></p>
+
+            <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+            <pre class="alert-info" style="color: black">
+greg@earth:~/python_examples$ ./hello.py
+Hello. I am a python program.
+What is your name? Ferd Burphel
+Hello there, Ferd Burphel!
+greg@earth:~/python_examples$            </pre>
+            <p> Вот и всё.</p>
+            <h2 id="2">Пример цикла For</h2> <!--ссылки внутри дока. 1. Ставим инд.-->
+            <h3><a href="#3">К содержанию</a></h3>
+            <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+                редактор и наберите следующую программу:</p>
+            <pre class="alert-info" style="color: black">
+#!/usr/bin/env python
+for cntr in range(0,10):
+&emsp;&emsp;&emsp;&emsp;print cntr </pre>        <!--Использовал для пробела спец.символ-->
+            <p><em>Не забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В
+                Python для указания на блоки кода используются не круглые «(» и фигурные «&#123;» скобки
+                как в других языках программирования, а отступы.
+            </p>
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <a href=" "><button type="button" class="btn btn-outline-primary">Назад</button></a>
+        </div>
+        <div class="col-md-3">
+            <a href=" "><button type="button" class="btn btn-outline-success">Главная</button></a>
+        </div>
+        <div class="col-md-3">
+            <a href="bootstrap10_2.html"><button type="button" class="btn btn-outline-primary">Вперед</button></a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
